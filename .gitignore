@@ -1,0 +1,7 @@
+# folders
+.idea/
+Build/
+Generated/
+
+# file extensions
+**/*.exe
