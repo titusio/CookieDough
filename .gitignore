@@ -3,5 +3,14 @@
 Build/
 Generated/
 
+# IDE
+.vscode
+
+# generated
+MAKEFILE
+build/
+CMakeLists.txt
+.DS_Store
+
 # file extensions
 **/*.exe
