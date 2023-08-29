@@ -1,13 +1,21 @@
 workspace "CookieDough"
     configurations { "Debug", "Release" }
     location "build"
-
+    
 project "CookieDough"
-    kind "StaticLib"
+    kind "SharedLib"
     language "C++"
     files {
         "CookieDough/src/**",
-        "CookieDough/include/**"
+        "CookieDough/include/**",
+    }
+    links {
+        "GLFW",
+        "GLAD"
+    }
+    includedirs {
+        "CookieDough/libs/glfw/include",
+        "CookieDough/libs/glad/include"
     }
 
 project "Sandbox"
@@ -22,3 +30,6 @@ project "Sandbox"
     includedirs {
         "CookieDough/include"
     }
+
+include "CookieDough/libs/glfw.lua"
+include "CookieDOugh/libs/glad.lua"

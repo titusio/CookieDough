@@ -1,0 +1,3 @@
+[submodule "CookieDough/libs/glfw"]
+	path = CookieDough/libs/glfw
+	url = https://github.com/glfw/glfw.git
